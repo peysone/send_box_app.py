@@ -64,7 +64,7 @@ Najwięcej pustych kilogramów ma paczka 13
 
 #quantity - ilość paczek
 
-quantity = int(input("ile paczek chcesz wysłać?"))
+quantity = int(input("ile paczek chcesz wysłać? "))
 print(f"Twoja liczba paczek to: {quantity}")
 # box - pojemnik na paczke
 box = 0
@@ -100,10 +100,11 @@ if box > 0:
     if empty_space > light_box:
         light_box_idx = box_count
         light_box = empty_space
-    print("paczka wysłana")
+    print("paczka wysłana!")
 
-print(empty_space)
-print(box)
+print(f"Liczba wysłanych paczek: {box_count}")
+print(f"najwięcej pustych kilogramów ma paczka: {light_box_idx} ({light_box} kg)")
+print(f"najlżejsza paczka waży: {box}kg")
 
 
 
